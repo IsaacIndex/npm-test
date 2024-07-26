@@ -1,5 +1,5 @@
 {
-  "name": "npm-test",
+  "name": "@isaacindex/npm-test",
   "private": true,
   "version": "0.0.0",
   "main": "dist/index.js",
