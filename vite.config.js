@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.jsx'),
+      entry: path.resolve(__dirname, 'src/main.jsx'),
       name: '@isaacindex/npm-test',
       fileName: (format) => `index.${format}.js`,
     },
