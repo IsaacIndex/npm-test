@@ -4,7 +4,7 @@
   "main": "dist/MyComponent.umd.js",
   "module": "dist/MyComponent.es.js",
   "exports": {
-    "./MyComponent": {
+    ".": {
       "import": "./dist/MyComponent.es.js",
       "require": "./dist/MyComponent.umd.js"
     }
