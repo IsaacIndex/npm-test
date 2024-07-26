@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        main: path.resolve(__dirname, 'src/main.jsx'),
+        // main: path.resolve(__dirname, 'src/main.jsx'),
         MyComponent: path.resolve(__dirname, 'src/MyComponent.jsx'),
       },
       name: '@isaacindex/npm-test',
