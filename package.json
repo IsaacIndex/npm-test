@@ -1,8 +1,8 @@
 {
   "name": "@isaacindex/npm-test",
   "version": "0.0.0",
-  "main": "dist/MyComponent.umd.js",
-  "module": "dist/MyComponent.es.js",
+  "main": "./dist/MyComponent.umd.js",
+  "module": "./dist/MyComponent.es.js",
   "exports": {
     "./MyComponent": {
       "import": "./dist/MyComponent.es.js",
