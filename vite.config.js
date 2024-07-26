@@ -2,16 +2,17 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 
-console.log(__dirname)
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.jsx'),
+      entry: {
+        main: path.resolve(__dirname, 'src/main.jsx'),
+        MyComponent: path.resolve(__dirname, 'src/MyComponent.jsx'),
+      },
       name: '@isaacindex/npm-test',
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format, entryName) => `${entryName}.${format}.js`,
     },
     rollupOptions: {
       external: ['react'],
