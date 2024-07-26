@@ -2,6 +2,10 @@
   "name": "npm-test",
   "private": true,
   "version": "0.0.0",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
