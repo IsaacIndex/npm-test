@@ -1,7 +1,11 @@
 {
   "name": "@isaacindex/npm-test",
   "version": "0.0.0",
-  "main": "dist/npm-test.js",
+  "exports": {
+    ".": {
+      "default": "./dist/npm-test.js"
+    }
+  },
   "files": [
     "dist"
   ],
