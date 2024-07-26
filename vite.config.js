@@ -9,9 +9,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/MyComponent.jsx'),
-      name: 'MyComponent',
-      fileName: (format) => `my-component.${format}.js`,
+      entry: path.resolve(__dirname, 'src/index.jsx'),
+      name: '@isaacindex/npm-test',
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['react'],
